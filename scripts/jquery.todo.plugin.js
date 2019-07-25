@@ -133,13 +133,11 @@
                 $this.append($toDoList);
 
                 $(todos).each(function (index, object) {
-                    html += "<li data-id='todo_" + object['id'] + "'" + ((object['completed'] === "1") ? "class='completed'>" : ">") + "<span class='todo_text'>" + object['text']
+                    html += "<li data-id='todo_" + object['id'] + "'" + ((object['completed'] === "1") ? " class='completed'>" : ">") + "<span class='todo_text'>" + object['text']
                         + "</span> <span class='deleter'>x</span></li>\n";
                 });
 
                 $toDoList.append($(html));
-                //addDeleteListener();
-                //addUpdateListener();*/
             } else {
                 htmlS = "<p>Add a to do!</p>";
                 $this.html(htmlS);
