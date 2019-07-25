@@ -1,4 +1,6 @@
+// JavaScript Document
+
 $(document).ready(function () {
-   console.log("ready");
-   jQuery(".todo_plugin").todo({serverURL: "server/actions.php"});
+    console.log("INIT PLUGIN");
+    jQuery(".todo_plugin").todo({serverURL: "server/actions.php"});
 });
